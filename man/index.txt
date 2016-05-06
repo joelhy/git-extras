@@ -16,9 +16,11 @@ git-delete-merged-branches(1) git-delete-merged-branches
 git-delete-submodule(1)       git-delete-submodule
 git-delete-tag(1)             git-delete-tag
 git-delta(1)                  git-delta
+git-docs(1)                   git-docs
 git-effort(1)                 git-effort
 git-extras(1)                 git-extras
-git-feature(1)                git-feature
+git-feat(1)                   git-feat
+git-fix(1)                    git-fix
 git-fork(1)                   git-fork
 git-fresh-branch(1)           git-fresh-branch
 git-gh-pages(1)               git-gh-pages
@@ -50,7 +52,9 @@ git-show-merged-branches(1)   git-show-merged-branches
 git-show-tree(1)              git-show-tree
 git-show-unmerged-branches(1) git-show-unmerged-branches
 git-squash(1)                 git-squash
+git-style(1)                  git-style
 git-summary(1)                git-summary
+git-test(1)                   git-test
 git-touch(1)                  git-touch
 git-undo(1)                   git-undo
 git-unlock(1)                 git-unlock
