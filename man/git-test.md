@@ -1,4 +1,4 @@
-git-test(1) -- Create/Merge test branch
+git-test(1) -- Adding missing tests
 =======================================
 
 ## SYNOPSIS
@@ -7,7 +7,7 @@ git-test(1) -- Create/Merge test branch
 
 ## DESCRIPTION
 
-  Create/Merge the given test branch
+  Adding missing tests
 
 ## OPTIONS
 

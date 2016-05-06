@@ -1,0 +1,59 @@
+.\" generated with Ronn/v0.7.3
+.\" http://github.com/rtomayko/ronn/tree/0.7.3
+.
+.TH "GIT\-PERF" "1" "May 2016" "" "Git Extras"
+.
+.SH "NAME"
+\fBgit\-perf\fR \- A code change that improves performance
+.
+.SH "SYNOPSIS"
+\fBgit\-perf\fR [\-a|\-\-alias branch_prefix] [finish] <name>
+.
+.SH "DESCRIPTION"
+A code change that improves performance
+.
+.SH "OPTIONS"
+<\-a|\-\-alias branch_prefix>
+.
+.P
+use \fBbranch_prefix\fR instead of \fBperf\fR
+.
+.P
+<finish>
+.
+.P
+Merge and delete the perf branch\.
+.
+.P
+<name>
+.
+.P
+The name of the perf branch\.
+.
+.SH "EXAMPLES"
+.
+.nf
+
+$ git perf dependencies
+\.\.\.
+$ (perf/dependencies) git commit \-m "Some changes"
+\.\.\.
+$ (perf/dependencies) git checkout master
+$ git perf finish dependencies
+
+$ git alias perfs "perf \-a perfs"
+$ git perfs dependencies
+$ (perfs/dependencies) \.\.\.
+$ (perfs/dependencies) git checkout master
+$ git perfs finish dependencies
+.
+.fi
+.
+.SH "AUTHOR"
+Written by Jesús Espino <\fIjespinog@gmail\.com\fR>
+.
+.SH "REPORTING BUGS"
+<\fIhttps://github\.com/tj/git\-extras/issues\fR>
+.
+.SH "SEE ALSO"
+<\fIhttps://github\.com/tj/git\-extras\fR>

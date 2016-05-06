@@ -1,4 +1,4 @@
-git-fix(1) -- Create/Merge fix branch
+git-fix(1) -- A bug fix
 =======================================
 
 ## SYNOPSIS
@@ -7,7 +7,7 @@ git-fix(1) -- Create/Merge fix branch
 
 ## DESCRIPTION
 
-  Create/Merge the given fix branch
+  A bug fix
 
 ## OPTIONS
 

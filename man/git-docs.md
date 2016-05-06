@@ -1,4 +1,4 @@
-git-docs(1) -- Create/Merge docs branch
+git-docs(1) -- Documentation only changes
 =======================================
 
 ## SYNOPSIS
@@ -7,7 +7,7 @@ git-docs(1) -- Create/Merge docs branch
 
 ## DESCRIPTION
 
-  Create/Merge the given docs branch
+  Documentation only changes
 
 ## OPTIONS
 

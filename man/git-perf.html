@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv='content-type' value='text/html;charset=utf8'>
   <meta name='generator' value='Ronn/v0.7.3 (http://github.com/rtomayko/ronn/tree/0.7.3)'>
-  <title>git-fix(1) - A bug fix</title>
+  <title>git-perf(1) - A code change that improves performance</title>
   <style type='text/css' media='all'>
   /* style: man */
   body#manpage {margin:0}
@@ -64,52 +64,52 @@
   </div>
 
   <ol class='man-decor man-head man head'>
-    <li class='tl'>git-fix(1)</li>
+    <li class='tl'>git-perf(1)</li>
     <li class='tc'>Git Extras</li>
-    <li class='tr'>git-fix(1)</li>
+    <li class='tr'>git-perf(1)</li>
   </ol>
 
   <h2 id="NAME">NAME</h2>
 <p class="man-name">
-  <code>git-fix</code> - <span class="man-whatis">A bug fix</span>
+  <code>git-perf</code> - <span class="man-whatis">A code change that improves performance</span>
 </p>
 
 <h2 id="SYNOPSIS">SYNOPSIS</h2>
 
-<p><code>git-fix</code> [-a|--alias branch_prefix] [finish] &lt;name&gt;</p>
+<p><code>git-perf</code> [-a|--alias branch_prefix] [finish] &lt;name&gt;</p>
 
 <h2 id="DESCRIPTION">DESCRIPTION</h2>
 
-<p>  A bug fix</p>
+<p>  A code change that improves performance</p>
 
 <h2 id="OPTIONS">OPTIONS</h2>
 
 <p>  &lt;-a|--alias branch_prefix&gt;</p>
 
-<p>  use <code>branch_prefix</code> instead of <code>fix</code></p>
+<p>  use <code>branch_prefix</code> instead of <code>perf</code></p>
 
 <p>  &lt;finish&gt;</p>
 
-<p>  Merge and delete the fix branch.</p>
+<p>  Merge and delete the perf branch.</p>
 
 <p>  &lt;name&gt;</p>
 
-<p>  The name of the fix branch.</p>
+<p>  The name of the perf branch.</p>
 
 <h2 id="EXAMPLES">EXAMPLES</h2>
 
-<pre><code>$ git fix dependencies
+<pre><code>$ git perf dependencies
 ...
-$ (fix/dependencies) git commit -m "Some changes"
+$ (perf/dependencies) git commit -m "Some changes"
 ...
-$ (fix/dependencies) git checkout master
-$ git fix finish dependencies
+$ (perf/dependencies) git checkout master
+$ git perf finish dependencies
 
-$ git alias fixs "fix -a fixs"
-$ git fixs dependencies
-$ (fixs/dependencies) ...
-$ (fixs/dependencies) git checkout master
-$ git fixs finish dependencies
+$ git alias perfs "perf -a perfs"
+$ git perfs dependencies
+$ (perfs/dependencies) ...
+$ (perfs/dependencies) git checkout master
+$ git perfs finish dependencies
 </code></pre>
 
 <h2 id="AUTHOR">AUTHOR</h2>
@@ -128,7 +128,7 @@ $ git fixs finish dependencies
   <ol class='man-decor man-foot man foot'>
     <li class='tl'></li>
     <li class='tc'>May 2016</li>
-    <li class='tr'>git-fix(1)</li>
+    <li class='tr'>git-perf(1)</li>
   </ol>
 
   </div>

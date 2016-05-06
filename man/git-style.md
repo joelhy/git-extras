@@ -1,4 +1,4 @@
-git-style(1) -- Create/Merge style branch
+git-style(1) -- Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
 =======================================
 
 ## SYNOPSIS
@@ -7,7 +7,7 @@ git-style(1) -- Create/Merge style branch
 
 ## DESCRIPTION
 
-  Create/Merge the given style branch
+  Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
 
 ## OPTIONS
 
