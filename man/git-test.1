@@ -1,0 +1,59 @@
+.\" generated with Ronn/v0.7.3
+.\" http://github.com/rtomayko/ronn/tree/0.7.3
+.
+.TH "GIT\-TEST" "1" "May 2016" "" "Git Extras"
+.
+.SH "NAME"
+\fBgit\-test\fR \- Create/Merge test branch
+.
+.SH "SYNOPSIS"
+\fBgit\-test\fR [\-a|\-\-alias branch_prefix] [finish] <name>
+.
+.SH "DESCRIPTION"
+Create/Merge the given test branch
+.
+.SH "OPTIONS"
+<\-a|\-\-alias branch_prefix>
+.
+.P
+use \fBbranch_prefix\fR instead of \fBtest\fR
+.
+.P
+<finish>
+.
+.P
+Merge and delete the test branch\.
+.
+.P
+<name>
+.
+.P
+The name of the test branch\.
+.
+.SH "EXAMPLES"
+.
+.nf
+
+$ git test dependencies
+\.\.\.
+$ (test/dependencies) git commit \-m "Some changes"
+\.\.\.
+$ (test/dependencies) git checkout master
+$ git test finish dependencies
+
+$ git alias tests "test \-a tests"
+$ git tests dependencies
+$ (tests/dependencies) \.\.\.
+$ (tests/dependencies) git checkout master
+$ git tests finish dependencies
+.
+.fi
+.
+.SH "AUTHOR"
+Written by Jesús Espino <\fIjespinog@gmail\.com\fR>
+.
+.SH "REPORTING BUGS"
+<\fIhttps://github\.com/tj/git\-extras/issues\fR>
+.
+.SH "SEE ALSO"
+<\fIhttps://github\.com/tj/git\-extras\fR>

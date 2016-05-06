@@ -1,0 +1,59 @@
+.\" generated with Ronn/v0.7.3
+.\" http://github.com/rtomayko/ronn/tree/0.7.3
+.
+.TH "GIT\-FEAT" "1" "May 2016" "" "Git Extras"
+.
+.SH "NAME"
+\fBgit\-feat\fR \- Create/Merge feat branch
+.
+.SH "SYNOPSIS"
+\fBgit\-feat\fR [\-a|\-\-alias branch_prefix] [finish] <name>
+.
+.SH "DESCRIPTION"
+Create/Merge the given feat branch
+.
+.SH "OPTIONS"
+<\-a|\-\-alias branch_prefix>
+.
+.P
+use \fBbranch_prefix\fR instead of \fBfeat\fR
+.
+.P
+<finish>
+.
+.P
+Merge and delete the feat branch\.
+.
+.P
+<name>
+.
+.P
+The name of the feat branch\.
+.
+.SH "EXAMPLES"
+.
+.nf
+
+$ git feat dependencies
+\.\.\.
+$ (feat/dependencies) git commit \-m "Some changes"
+\.\.\.
+$ (feat/dependencies) git checkout master
+$ git feat finish dependencies
+
+$ git alias feats "feat \-a feats"
+$ git feats dependencies
+$ (feats/dependencies) \.\.\.
+$ (feats/dependencies) git checkout master
+$ git feats finish dependencies
+.
+.fi
+.
+.SH "AUTHOR"
+Written by Jesús Espino <\fIjespinog@gmail\.com\fR>
+.
+.SH "REPORTING BUGS"
+<\fIhttps://github\.com/tj/git\-extras/issues\fR>
+.
+.SH "SEE ALSO"
+<\fIhttps://github\.com/tj/git\-extras\fR>
